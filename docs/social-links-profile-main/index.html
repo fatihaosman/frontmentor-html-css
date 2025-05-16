@@ -11,35 +11,61 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body  class="bg-[hsl(0,0%,8%)] flex items-center justify-center min-h-screen ">
-<div>
-  <div class="bg-[hsl(0,0%,12%)] w-[90%] text-center max-w-xs rounded-lg flex flex-col justify-center items-center px-4 py-6">
-    <img src="./assets/images/avatar-jessica.jpeg" alt="" class="rounded-full mb-4 w-24 h-24">
-    <p class="text-[hsl(0,0%,100%)] font-bold text-2xl mb-2">Jessica Randall</p>
+<div class="flex flex-col items-center ">
+  
+  <div class="bg-[hsl(0,0%,12%)]  text-center max-w-xs rounded-lg flex flex-col justify-center items-center px-8 py-8 ">
+
+    <img src="./assets/images/avatar-jessica.jpeg" alt="" class="rounded-full mb-4 w-16 h-16">
+    <p class="text-[hsl(0,0%,100%)] font-bold text-2xl mb-1">Jessica Randall</p>
     <p class="text-[hsl(75,94%,57%)] font-bold mb-4">London, United Kingdom</p>
-    <p class="text-[hsl(0,0%,100%)] text-base font-semibold">"Front-end developer and avid reader."</p>
+    <p class="text-[hsl(0,0%,100%)] text-sm font-semibold">"Front-end developer and avid reader."</p>
 
     <div class="flex flex-col gap-3 mt-4 w-full">
-      <button class="bg-[hsl(0,0%,20%)] text-[hsl(0,0%,100%)] rounded-md py-1 font-bold "onclick="this.style.backgroundColor = '[hsl(75,94%,57%)]'">
+      <!--you can aslo use onclick method
+       <button class="bg-[hsl(0,0%,20%)] text-[hsl(0,0%,100%)] rounded-md py-1 font-bold " 
+      onclick="this.classList.toggle('bg-[hsl(75,94%,57%)]')">
+      GitHub</button><button class="bg-[hsl(0,0%,20%)] text-[hsl(0,0%,100%)] rounded-md py-1 font-bold " 
+      onclick="this.classList.toggle('bg-[hsl(75,94%,57%)]')">
+      GitHub</button> -->
+
+      <button class="bg-[hsl(0,0%,20%)] text-[hsl(0,0%,100%)] rounded-md py-1 font-bold hover:bg-[hsl(75,94%,57%)] focus:bg-[hsl(75,94%,57%)]" >
       GitHub</button>
 
-    <button  class="bg-[hsl(0,0%,20%)] text-[hsl(0,0%,100%)] rounded-md py-1 font-bold">
+    <!-- you can also use this method
+      <label class="inline-block cursor-pointer">
+  <input type="checkbox" class="peer hidden" />
+  <div class="bg-[hsl(0,0%,20%)] peer-checked:bg-[hsl(75,94%,57%)] text-[hsl(0,0%,100%)] rounded-md py-1 px-4 font-bold text-center">
+    Frontend Mentor
+  </div>
+</label> -->
+
+  <button class="bg-[hsl(0,0%,20%)] text-[hsl(0,0%,100%)] rounded-md py-1 font-bold hover:bg-[hsl(75,94%,57%)] focus:bg-[hsl(75,94%,57%)]" >
       Frontend Mentor</button>
+    <button
+  class="bg-[hsl(0,0%,20%)] hover:bg-[hsl(75,94%,57%)] focus:bg-[hsl(75,94%,57%)] text-[hsl(0,0%,100%)] rounded-md py-1 px-4 font-bold"
+>
+  linked in
+</button>
 
-    <button class="bg-[hsl(0,0%,20%)] text-[hsl(0,0%,100%)] rounded-md py-1 font-bold">
-      LinkedIn</button>
-
-    <button class="bg-[hsl(0,0%,20%)] rounded-md py-1 text-[hsl(0,0%,100%)] text-[hsl(0,0%,100%)] font-bold">
+    <button class="bg-[hsl(0,0%,20%)] 
+     hover:bg-[hsl(75,94%,57%)] focus:bg-[hsl(75,94%,57%)] rounded-md py-1 text-[hsl(0,0%,100%)] text-[hsl(0,0%,100%)] font-bold">
       Twitter</button>
 
-    <button class="bg-[hsl(0,0%,20%)] rounded-md py-1 text-[hsl(0,0%,100%)] font-bold">
+    <button class="bg-[hsl(0,0%,20%)] hover:bg-[hsl(75,94%,57%)] focus:bg-[hsl(75,94%,57%)]  rounded-md py-1 text-[hsl(0,0%,100%)] font-bold">
       Instagram</button>
     </div>
 </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="text-[hsl(0,0%,100%)] text-xs underline mt-4 ">
+    Challenge by 
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-[hsl(75,94%,57%)]">Frontend Mentor</a>. 
+    Coded by
+     <a href="https://github.com/fatihaosman" class="text-[hsl(75,94%,57%)] ">Fatiha.Osman</a>.
   </div>
 </div>
 </body>
 </html>
+
+<!--
+focus allows the bg styling to stay!! when you click
+-->
