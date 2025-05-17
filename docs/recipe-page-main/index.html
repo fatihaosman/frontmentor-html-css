@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <title>Frontend Mentor | Recipe page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -14,53 +15,60 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="bg-[hsl(30,54%,90%)] flex items-center justify-center min-h-screen">
     <div>
-      <img src="./assets/images/omelette.jpeg" alt="">
-      <h1>Simple Omelette Recipe</h1>
+      <div class="bg-[hsl(0,0%,100%)] w-full max-w-2xl rounded-lg shadow-lg p-6">
+      <img src="./assets/images/omelette.jpeg" alt="" class=" rounded-sm ">
+      <h1 class="text-4xl font-bold mb-3 mt-2">Simple Omelette Recipe</h1>
 
-      <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+      <p class="text-[hsl(0,0%,42%)]">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
       to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
 
-      <div>
-        Preparation time
-        Total: Approximately 10 minutes
-        Preparation: 5 minutes
-        Cooking: 5 minutes
+      <div class="bg-[hsl(330,100%,98%)] p-4 rounded-lg mt-4 hsl(24, 5%, 18%)">
+        <h3 class="text-[hsl(332,51%,32%)] font-medium text-xl mb-2">Preparation time</h3>
+        <ul class="list-disc px-8">
+          <li>Total: Approximately 10 minutes</li>
+          <li>Preparation: 5 minutes</li>
+          <li> Cooking: 5 minutes</li>
+          
+        </ul>
       </div>
-      <div>
+      <div class=" p-4 rounded-lg mt-4 hsl(24, 5%, 18%) mb-2 border-b-2">
 
-      Ingredients
-
-      2-3 large eggs
-      Salt, to taste
-      Pepper, to taste
-      1 tablespoon of butter or oil
-      Optional fillings: cheese, diced vegetables, cooked meats, herbs
+      <h3 class="text-[hsl(14,45%,36%)] font-bold text-2xl mb-2">Ingredients</h3>
+      <ul class="list-disc px-8">
+        <li>2-3 large eggs</li>
+      <li> Salt, to taste</li>
+      <li> Pepper, to taste</li>
+      <li>1 tablespoon of butter or oil</li>
+      <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
       </div>
 
-      <div>
-        Instructions
+      <div class="border-b-2 mb-2 px-4 py-4">
+        <h3 class="text-[hsl(14,45%,36%)] font-bold text-2xl mb-2">Instructions</h3>
 
-      Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-      You can add a tablespoon of water or milk for a fluffier texture.
+      <ul class="list-decimal px-8 ">
+        <li><span class="text-[hsl(24,5%,18%)] font-medium">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+      You can add a tablespoon of water or milk for a fluffier texture.</li>
 
-      Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
+      <li><span class="text-[hsl(24,5%,18%)] font-medium">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
 
-      Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-      the eggs evenly coat the surface.
+    <li><span class="text-[hsl(24,5%,18%)] font-medium">  Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+      the eggs evenly coat the surface.</li>
 
-      Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-      middle, sprinkle your chosen fillings over one half of the omelette.
+      <li><span class="text-[hsl(24,5%,18%)] font-medium">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the 
+      middle, sprinkle your chosen fillings over one half of the omelette.</li>
 
-      Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-      fillings. Let it cook for another minute, then slide it onto a plate.
+      <li><span class="text-[hsl(24,5%,18%)] font-medium">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the 
+      fillings. Let it cook for another minute, then slide it onto a plate.</li>
 
-      Enjoy: Serve hot, with additional salt and pepper if needed.
+      <li><span class="text-[hsl(24,5%,18%)] font-medium">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
+      </ul>
       </div>
-      <div>
+      <div class=" mb-2 px-4 py-4">
         
-        Nutrition
+        <h3 class="text-[hsl(14,45%,36%)] font-bold text-2xl mb-2">Nutrition</h3>
 
         The table below shows nutritional values per serving without the additional fillings.
 
@@ -82,5 +90,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+    </div>
 </body>
 </html>
