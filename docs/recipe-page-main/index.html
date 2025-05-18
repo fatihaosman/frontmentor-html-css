@@ -10,21 +10,18 @@
   <title>Frontend Mentor | Recipe page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
-<body class="bg-[hsl(30,54%,90%)] flex items-center justify-center min-h-screen">
-    <div>
-      <div class="bg-[hsl(0,0%,100%)] w-full max-w-2xl rounded-lg shadow-lg p-6">
+<body class="bg-[hsl(30,54%,90%)] flex items-center justify-center min-h-screen py-8">
+    <div class="flex items-center justify-center min-h-screen flex-col">
+      <div class="bg-[hsl(0,0%,100%)] w-full max-w-2xl rounded-lg shadow-lg p-6 mb-4">
       <img src="./assets/images/omelette.jpeg" alt="" class=" rounded-sm ">
       <h1 class="text-4xl font-bold mb-3 mt-2">Simple Omelette Recipe</h1>
 
       <p class="text-[hsl(0,0%,42%)]">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
       to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
 
-      <div class="bg-[hsl(330,100%,98%)] p-4 rounded-lg mt-4 hsl(24, 5%, 18%)">
+      <div class="bg-[hsl(330,100%,98%)] p-4 rounded-lg mt-4 hsl(24,5%,18%)">
         <h3 class="text-[hsl(332,51%,32%)] font-medium text-xl mb-2">Preparation time</h3>
         <ul class="list-disc px-8">
           <li>Total: Approximately 10 minutes</li>
@@ -33,8 +30,8 @@
           
         </ul>
       </div>
-      <div class=" p-4 rounded-lg mt-4 hsl(24, 5%, 18%) mb-2 border-b-2">
-
+      
+      <div class=" px-4 rounded-lg mb-2 border-b-2 py-4">
       <h3 class="text-[hsl(14,45%,36%)] font-bold text-2xl mb-2">Ingredients</h3>
       <ul class="list-disc px-8">
         <li>2-3 large eggs</li>
@@ -48,7 +45,7 @@
       <div class="border-b-2 mb-2 px-4 py-4">
         <h3 class="text-[hsl(14,45%,36%)] font-bold text-2xl mb-2">Instructions</h3>
 
-      <ul class="list-decimal px-8 ">
+      <ul class="list-decimal px-8 marker:text-[hsl(14,45%,36%)]  space-y-2 ">
         <li><span class="text-[hsl(24,5%,18%)] font-medium">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
       You can add a tablespoon of water or milk for a fluffier texture.</li>
 
@@ -63,32 +60,60 @@
       <li><span class="text-[hsl(24,5%,18%)] font-medium">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the 
       fillings. Let it cook for another minute, then slide it onto a plate.</li>
 
-      <li><span class="text-[hsl(24,5%,18%)] font-medium">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
+      <li class=""><span class="text-[hsl(24,5%,18%)] font-medium">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
       </ul>
       </div>
-      <div class=" mb-2 px-4 py-4">
+
+
+      <div class=" mb-2 px-4 py-4 ">
         
         <h3 class="text-[hsl(14,45%,36%)] font-bold text-2xl mb-2">Nutrition</h3>
 
-        The table below shows nutritional values per serving without the additional fillings.
+        <p class="mb-2">The table below shows nutritional values per serving without the additional fillings.</p>
 
-        Calories
-        277kcal
+        <div class="flex justify-center align-center flex-col   ">
 
-        Carbs
-        0g
+          <div class="w-full flex flex-col items-center">
+              <!-- Row: centered and restricted to max-w-sm -->
+              <div class="flex flex-row justify-between pb-2 mb-1 mt-1 w-full max-w-sm">
+                <p>Calories</p>
+                <p class="text-[hsl(14,45%,36%)] font-medium">277kcal</p>
+              </div>
+              <!-- Full-width border below the row -->
+              <div class="border-b-2 w-full"></div>
+           </div>
+      
+          <div class="w-full flex flex-col items-center">
+            <div class="flex flex-row justify-between max-w-sm pb-2 mb-1 mt-1  w-full"> 
+            <p> Carbs</p>
+            <p class="text-[hsl(14,45%,36%)] font-medium">  0g</p>
+            </div>
+            <div class="border-b-2 w-full"></div>
+          </div>
 
-        Protein
-        20g
+       <div class="w-full flex flex-col items-center">
+          <div class="flex flex-row justify-between max-w-sm pb-2 mb-1 mt-1 w-full"> 
+          <p> Protein</p>
+          <p class="text-[hsl(14,45%,36%)] font-medium">20g</p>
+        </div>
+        <div class="border-b-2 w-full"></div>
+       </div>
 
-        Fat
-        22g
+        <div class="w-full flex flex-col items-center">
+          <div  class="flex flex-row justify-between max-w-sm pb-2 mb-1 mt-1 w-full">
+          <p>Fat</p>
+         <p class="text-[hsl(14,45%,36%)] font-medium"> 22g</p>
+         </div>
+        </div>
+      <div class="border-b-2 w-full"></div>
+
+        </div>
       </div>
     </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">fatihaosman</a>.
   </div>
     </div>
 </body>
