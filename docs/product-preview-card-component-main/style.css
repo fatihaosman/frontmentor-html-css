@@ -115,3 +115,25 @@ body{
   transition: background-color 0.3s ease;
 }
 
+
+
+
+
+@media (max-width: 600px) {
+  .product-card {
+    flex-direction: column;
+    height:auto;
+    width: 80%;
+  }
+  .product-card .product-image {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: auto;
+  }
+   .product-details {
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+  }
+ 
+  
+}
