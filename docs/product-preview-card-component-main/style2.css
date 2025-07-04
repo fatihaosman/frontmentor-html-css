@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+:root {
+  --Green1 : hsl(158, 36%, 37%);
+  --Green : hsl(158, 42%, 18%);
+
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+
+  --fw-reegular:500;
+  --fw-bold:700;
+
+  --ff-accent:'fraunces', serif;
+  --ff-base:'montserrat', sans-serif;
+}
+
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+
+/* general styling */
+
+body{
+  font-family: var(--ff-base);
+  font-weight: var(--fw-reegular);
+  color: var(--black);
+  font-size: 0.875rem; /* 14px */
+  background-color: var(--cream);
+  
+  /*for this project*/
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+}
+
+/*utilities*/
+.flex-group{
+  display:flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+}
+
+/*product styles*/
+.product{
+  --content-padding:1.5rem;
+  --content-spacing: 1rem;
+
+
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.product-content{
+  padding: var(--content-padding);
+  border: 3px solid red;
+  display: grid;
+  gap:var(--content-spacing);
+}
+
+.product-category{
+  text-transform: uppercase;
+}
+
+
