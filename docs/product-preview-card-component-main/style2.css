@@ -37,7 +37,7 @@
 
 body {
   /* 4. Add accessible line-height */
-  line-height: 1.5;
+  line-height: 1.7;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
 }
@@ -58,6 +58,10 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+h1,h2,h3{
+  line-height: 1;
+}
+
 /* 9. Improve line wrapping */
 p {
   text-wrap: pretty;
@@ -67,12 +71,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
 /* general styling */
 
 body{
   font-family: var(--ff-base);
   font-weight: var(--fw-reegular);
-  color: var(--black);
+  color: var(--grey);
   font-size: 0.875rem; /* 14px */
   background-color: var(--cream);
   
@@ -80,6 +85,7 @@ body{
   display: grid;
   place-content: center;
   margin: 1rem;
+  min-height: 100vh;
 }
 
 /*utilities*/
@@ -87,19 +93,42 @@ body{
   display:flex;
   gap: 1rem;
   flex-wrap: wrap;
-
+  align-items: center;
+}
+.visually-hidden:not(:focus):not(:active){
+  clip:rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 /*product styles*/
 .product{
-  --content-padding:1.5rem;
+  --content-padding:2rem;
   --content-spacing: 1rem;
-
+display: grid;
 
   background-color: var(--white);
   border-radius: 0.5rem;
   overflow: hidden;
+  max-width: 600px;
 }
+
+@media (min-width: 600px) {
+  .product{
+    grid-template-columns: 1fr 1fr;
+    /* max-width: 600px;
+    height: 430px; */
+  }
+  
+}
+
+
+
+
 .product-content{
   padding: var(--content-padding);
   border: 3px solid red;
@@ -109,6 +138,51 @@ body{
 
 .product-category{
   text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--grey);
+  font-size: 0.825rem;
 }
+.product-title{
+  font-size: 2rem;
+  font-family: var(--ff-accent);
+  color: var(--black);
+}
+
+.product-price{
+  font-size: 2rem;
+  font-family: var(--ff-accent);
+  color: var(--Green1);
+
+}
+
+/*button*/
+.button{
+cursor: pointer;
+padding: 0.5rem 1.5rem;
+text-decoration: none;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+border: 0;
+gap: 0.75rem;
+background-color: var(--Green1);
+color: var(--white);
+font-size: 0.925rem; /* 15px */
+border-radius: 0.5rem;
+}
+
+.button:is(:focus, :hover) {
+  background-color: var(--Green);
+}
+.button[data-icon="shopping-cart"]::before{
+content:"";
+background-image: url("./images/icon-cart.svg");
+width: 15px;
+height: 16px;
+
+}
+
+
+
 
 
