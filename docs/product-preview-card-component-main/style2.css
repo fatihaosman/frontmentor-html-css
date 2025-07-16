@@ -19,6 +19,7 @@
 
 
 /* 1. Use a more-intuitive box-sizing model */
+/* Set box-sizing to border-box for all elements */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -95,6 +96,7 @@ body{
   flex-wrap: wrap;
   align-items: center;
 }
+/* Hides elements visually but keeps them accessible for screen readers */
 .visually-hidden:not(:focus):not(:active){
   clip:rect(0 0 0 0);
   clip-path: inset(50%);
@@ -116,7 +118,7 @@ display: grid;
   overflow: hidden;
   max-width: 600px;
 }
-
+/* For screens 600px and up, use a two-column layout */
 @media (min-width: 600px) {
   .product{
     grid-template-columns: 1fr 1fr;
@@ -128,26 +130,27 @@ display: grid;
 
 
 
-
+/* === CONTENT SECTION INSIDE PRODUCT CARD === */
 .product-content{
   padding: var(--content-padding);
   /* border: 3px solid red; */
   display: grid;
   gap:var(--content-spacing);
 }
-
+/* Category text (e.g. "Perfume") */
 .product-category{
   text-transform: uppercase;
   letter-spacing: 5px;
   color: var(--grey);
   font-size: 0.825rem;
 }
+/* Product title (e.g. "Gabrielle Essence...") */
 .product-title{
   font-size: 2rem;
   font-family: var(--ff-accent);
   color: var(--black);
 }
-
+/* Current price styling */
 .product-price{
   font-size: 2rem;
   font-family: var(--ff-accent);
@@ -174,6 +177,7 @@ border-radius: 0.5rem;
 .button:is(:focus, :hover) {
   background-color: var(--Green);
 }
+/* Insert cart icon into the button using a pseudo-element */
 .button[data-icon="shopping-cart"]::before{
 content:"";
 background-image: url("./images/icon-cart.svg");

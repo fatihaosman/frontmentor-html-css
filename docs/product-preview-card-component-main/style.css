@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 :root {
   --Green1 : hsl(158, 36%, 37%);
@@ -39,7 +39,7 @@ body{
     padding-right: 40px;
 }
 .product-details h1{
-  /* font-family: 'Montserrat', sans-serif; */
+  
   color: var(--grey);
   font-weight:normal ;
   font-size: 13px;
@@ -140,8 +140,8 @@ body{
   }
  .product-details h2 {
   font-size: 30px;
-  word-break: normal;   /* avoid breaking inside words */
-  white-space: normal;  /* allow normal wrapping */
+  word-break: normal;   
+  white-space: normal;  
 }
 .product-details p{
   margin-top: -10px;
@@ -151,4 +151,4 @@ body{
 
 }
   
-}
+} */
