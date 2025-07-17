@@ -101,6 +101,7 @@ color: var(--Grey400);
 .small-main p {
   color: var(--Grey400);
   font-weight: 400;
+  position: relative;
 }
 
 
@@ -115,5 +116,11 @@ color: var(--Grey400);
 }
 .calc{
   border-top: solid 5px var(--Blue);
+}
+img{
+  width: 50px;
+  height: 50px;
+  align-self: self-end;
+  
 }
 
