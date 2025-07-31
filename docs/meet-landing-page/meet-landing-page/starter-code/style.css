@@ -130,10 +130,14 @@ div img{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  text-align: center;
+
   margin-top: 2rem;
-  gap: 2rem;
- 
+  gap: 8rem;
+ /* width: 900px; */
   margin: auto;
-  padding: 20px 50px;
+  
+}
+.section6-p{
+   font-size: 0.8rem;
+  
 }
