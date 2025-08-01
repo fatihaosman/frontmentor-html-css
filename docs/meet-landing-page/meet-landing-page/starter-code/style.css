@@ -7,6 +7,7 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
   color: #333;
+  height: 100vh;
 }
 main{
   margin-top: 20px;
@@ -124,8 +125,12 @@ div img{
   margin-bottom: 1rem;
 }
 
-/*section5*/
+/*section5*/ 
 .section6{
+  background: linear-gradient(rgba(45, 135, 143, 0.829), rgba(45, 135, 143, 0.808)),
+   url('./assets/desktop/image-footer.jpg');
+  background-size: cover;      /* Optional: scale image to cover container */
+  background-position: center; /* Optional: center the image */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -135,9 +140,20 @@ div img{
   gap: 8rem;
  /* width: 900px; */
   margin: auto;
+  min-height: 300px;
+
   
 }
 .section6-p{
-   font-size: 0.8rem;
+   font-size: 1rem;
+   color: white;
   
+  
+}
+.downloadBtn.adjust{
+  background-color: rgb(152, 91, 173);
+  
+}
+.downloadBtn.adjust span{
+color: rgb(198, 113, 227);
 }
