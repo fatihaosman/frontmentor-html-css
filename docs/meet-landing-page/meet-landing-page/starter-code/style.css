@@ -157,3 +157,11 @@ div img{
 .downloadBtn.adjust span{
 color: rgb(198, 113, 227);
 }
+
+
+.section2{
+  margin: 40px 0;
+  text-align: center;
+  border: #333 solid 1px;
+  border-radius: 100%;
+}
