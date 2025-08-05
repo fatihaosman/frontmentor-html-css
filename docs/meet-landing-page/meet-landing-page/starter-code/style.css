@@ -10,7 +10,7 @@ body {
   height: 100vh;
 }
 main{
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 
@@ -50,14 +50,14 @@ header{
 }
 .section1-text h1{
   font-size: 4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
  font-weight: bold;
 }
 .section1-text p{
   color: rgb(139, 139, 139);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 .downloadBtn{
   margin-right: 1rem;
@@ -106,14 +106,14 @@ div img{
   
   margin: auto;
   max-width: 390px;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 
   margin-bottom: 2rem;
 }
 .section4 p{
   color: rgb(139, 139, 139);
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-bottom: 0.3rem;
 }
 #section4-head{
@@ -141,13 +141,19 @@ div img{
  /* width: 900px; */
   margin: auto;
   min-height: 300px;
+  /* z-index: 1; */
 
   
 }
+.footer-h1{
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+  ;
+}
 .section6-p{
    font-size: 1rem;
-   color: white;
-  
+   color: rgb(237, 236, 236); 
   
 }
 .downloadBtn.adjust{
@@ -159,12 +165,7 @@ color: rgb(198, 113, 227);
 }
 
 
-/* .section2{
-  margin: 40px 0;
-  text-align: center;
-  border: #333 solid 1px;
-  border-radius: 100%;
-} */
+
  .section2,.section5{
   display: flex;
   align-items: center;
@@ -183,9 +184,77 @@ color: rgb(198, 113, 227);
   border-radius: 50%;
   border: solid 1px #cfcfcf;
   font-size: small;
+  background-color: #f4f4f4;
  }
  .verticle-line{
   background-color:#cfcfcf ;
   height:60px;
   width: 1px;
  }
+ .section5{
+  margin-bottom: -12px;
+  /* z-index: 2; */
+  margin-top: 0px;
+ }
+
+ /*tablet*/
+ .tablet-profile{
+  display: none;
+ }
+ .tablet-profile img{
+  width: 100%;
+  height: auto;
+ }
+
+ /* responsivness */
+ /* For screens 600px and below, use a two-column layout */
+ @media (max-width:768px){
+  .profile {
+    display: none;
+  }
+  .tablet-profile{
+    display: block;
+    
+  }
+.section1-content{
+  display: flex;
+  flex-direction: column;
+}
+div img{
+  width: 130px;
+}
+.section2,.section5{
+  margin-top: 40px;
+  margin-bottom: 40px;
+ }
+ .section5{
+  margin-bottom: -20px;
+  margin-top: 0px;
+ }
+ .section6{
+  flex-direction: column;
+  text-align: center;
+   gap: 1rem;
+   padding: 0 4.5rem;
+ }
+ 
+ .section6-p{
+  margin: 10px 0;
+  br{
+    display: none;
+  }
+  
+ }
+ }
+ /* @media (max-width:1242px){
+  .section1-text h1{
+  font-size: 3rem;
+ 
+}
+ }
+ @media (max-width:1145px){
+  .section1-text h1{
+  font-size: 1rem;
+ 
+}
+ } */
