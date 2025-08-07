@@ -279,6 +279,12 @@ div img{
 .section6-p{
    font-size: 0.9rem;
    color: rgb(237, 236, 236); 
-  
 }
+.section6{
+   background: linear-gradient(rgba(45, 135, 143, 0.829), rgba(45, 135, 143, 0.808)),
+   url('./assets/mobile/image-footer.jpg');
+   background-size: cover;      /* Optional: scale image to cover container */
+  background-position: center; /* Optional: center the image */
+}
+
 }
