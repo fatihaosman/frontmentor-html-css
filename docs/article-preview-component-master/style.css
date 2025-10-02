@@ -13,7 +13,7 @@
   --White: hsl(0, 0%, 100%);
 
  ---Weights: 500, 700;
- --Font-size: 16px;
+ --Font-size: 13px;
 }
 
 *{
@@ -39,57 +39,82 @@ body{
   background-color: var(--White);
   border-radius: 10px;
   /* box-shadow: 0px 15px 20px rgba(0,0,0,0.2); */
-  width: 600px;
+  width: 680px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
+ 
 }
  @media (min-width: 600px) {
   .card {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    gap: 0;
-    /* display: grid;
-    grid-template-columns: 1fr 2fr; */
+    gap: 0; */
     
+    display: grid;
+    grid-template-columns: 260px 400px;
+    gap: 0;
+   
+ 
   }
  
-
-
- .card .picture img {
+.card .picture{
   width: 100%;
-  height: 100%;       /* keeps aspect ratio */
-  object-fit: cover;  
+  min-height: 100%;
+  object-fit: cover;
+  /* object-position:left ; */
 }
 
 
+
  
-} 
+ } 
+
+
+ 
+
 .card .picture{
   width: 100%;
-  height: 300px;
+  height: 200px;
+  /* background-color: rgb(57, 35, 4); */
+ 
 }
 .picture img {
   width: 100%;
-  height: 100%;       /* keeps aspect ratio */
- 
+  height: 100%  ; 
+  object-fit: cover;
+ object-position: left; 
+
 }
 
 .content{
-  padding:0px 40px;
+  padding: 18px 40px;
 }
-.content h1{
-  font-size: 20px;
+.text-content h1{
+  font-size: 18px;
   color: var(--Very-Dark-Grayish-Blue);
-  font-weight:bolder;
-  padding-bottom: 15px;
+  font-weight:900;
+  padding-bottom: 10px;
+  
 }
-.content p{
+.text-content p{
   line-height: 1.5;
-  padding-bottom: 15px;
+  padding-bottom: 18px;
   /* font-weight: 504; */
+}
+
+
+.author{
+  display: flex;
+  justify-content: space-between; 
+  /* background-color: wheat; */
+  width: 100%;
+  /* padding: 0px 40px 30px 40px; */
+  align-items: center;
+   /* padding-bottom: 25px; */
+
 }
 
 .author-leftcontent button{
@@ -103,8 +128,8 @@ body{
  justify-content: center;
 }
 .author-leftcontent button img{
-   width:15px;
-  height:15px;
+   width:16px;
+  height:16px;
  
 }
 .author .author-rightcontent img{
@@ -112,14 +137,7 @@ body{
   height:45px;
   border-radius: 100%;
 }
-.author{
-  display: flex;
-  justify-content: space-between; 
-  /* background-color: wheat; */
-  width: 100%;
-  padding: 0px 40px 30px 40px;
-  align-items: center;
-}
+
 .author .author-rightcontent{
   display: flex;
   align-items: center;
