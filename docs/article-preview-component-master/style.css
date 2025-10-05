@@ -109,7 +109,7 @@ body{
 
 
 .author{
- 
+visibility: hidden;
   display: flex;
   justify-content: space-between; 
   /* background-color: wheat; */
@@ -127,7 +127,7 @@ body{
   background-color: var(--Light-Grayish-Blue);
   padding: 10px;
   border-radius: 100%;
-  border:none ;
+  border:none;
   cursor: pointer;
  display: flex;
  align-items: center;
@@ -188,6 +188,38 @@ body{
   font-size: 13px;
   letter-spacing: 4px;
   font-weight: 400;
+}
+
+
+.authour-mobile{
+  background-color: var(--Very-Dark-Grayish-Blue);
+  width: 100%;
+  display: flex;
+  gap: 106px;
+  align-items: center;
+  padding: 25px 10px;
+}
+.rightcont{
+ display: flex;
+ gap: 30px;
+}
+.rightcont p{
+ font-size: 20px;
+}
+.rightcont .social-icons img{
+  width: 24px;
+  height: 24px;
+}
+.rightcont button{
+  background-color: var(--Light-Grayish-Blue);
+  padding: 10px;
+  border-radius: 100%;
+  border:none;
+  cursor: pointer;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
 }
 
 
