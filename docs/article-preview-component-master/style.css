@@ -43,8 +43,8 @@ body{
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 40px;
+  align-items: stretch;
+  gap: 0;
 
  
 }
@@ -169,9 +169,10 @@ visibility: hidden;
 
 
 .authour-mobile{
+ display: none;
   background-color: var(--Very-Dark-Grayish-Blue);
   width: 100%;
-  display: flex;
+  /* display: flex; */
   gap: 106px;
   align-items: center;
   padding: 25px 10px;
@@ -219,13 +220,15 @@ visibility: hidden;
   object-fit: cover;
   object-position:left ;
 }
-
-/* .author{
- display: block;
-
-} */
+.content{
+  padding-bottom: 0px;
+  margin: 0;
+}
 .authour-mobile{
   display: none;
+  margin-top: 0;
+    padding-top: 0;
+
 }
 
  } 
