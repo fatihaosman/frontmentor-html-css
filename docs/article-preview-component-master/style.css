@@ -99,7 +99,7 @@ body{
   position: relative;
 }
 
-.author-leftcontent button{
+button{
   background-color: var(--Light-Grayish-Blue);
   padding: 10px;
   border-radius: 100%;
@@ -109,9 +109,9 @@ body{
  align-items: center;
  justify-content: center;
  position: relative;
+ cursor: pointer;
 }
-.author-leftcontent button img{
- 
+button img{
    width:16px;
   height:16px;
  
@@ -134,6 +134,7 @@ body{
 
 
 .pop-up{
+visibility: hidden;
   position: absolute;
   background-color: var(--Very-Dark-Grayish-Blue);
   display: flex;
