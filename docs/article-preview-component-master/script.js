@@ -39,11 +39,6 @@ window.addEventListener("resize", function() {
     author.style.display = "flex";
     popup.style.visibility = "visible";
     } 
-    // if( window.innerWidth >= 600 && authormobile.style.display === "flex"  ){
-    //   authormobile.style.display = "none";
-    //   author.style.display = "flex";
-    //   popup.style.visibility = "visible";
-    // }
   else {
     popup.style.visibility = "hidden";
   }

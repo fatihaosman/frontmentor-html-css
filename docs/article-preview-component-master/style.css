@@ -92,8 +92,8 @@ body{
   width: 100%;
   /* padding: 0px 40px 30px 40px; */
   align-items: center;
-   /* padding-bottom: 25px; */
-
+   padding-top: 5px;
+padding-bottom: 20px;
 }
 .author-leftcontent{
   position: relative;
