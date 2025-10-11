@@ -29,7 +29,7 @@ body{
   flex-direction: column;
   align-items: center;
   background-color: var(--White);
- 
+ padding: 40px 20px;
 }
 
 .content{
@@ -103,5 +103,74 @@ button{
   border-radius: 10px;
   margin-top: 24px;
   font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+
+ @media (min-width: 600px){
+  .newsletter{
+ flex-direction: row-reverse;
+    border-radius: 15px;
+    /* overflow: hidden; */
+    box-shadow: 0px 20px 30px rgba(0,0,0,0.1);
+    margin: 0;
+     max-width: 700px; 
+     /* height: auto; */
+      height: 450px;
+      gap: 20px;
+  }
+  .mobile {
+  display: block;
+   height: 430px;
+}
+
+
+  .mobile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    src:url("./images/illustration-sign-up-desktop.svg");
+   
+  }
+
+ 
+  .content{
+    flex: 1;
+    /* padding: 48px 36px; */
+  }
+  .content h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .content .desc{
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .content p{
+    font-size: 12px;
+    margin-bottom:15px ;
+    /* line-height: 1.6; */
+  }
+
+
+  .input-button input{
+  padding:12px 40px;
+  border: solid 1px var(--Grey);
+  border-radius: 8px;
+  font-size: 12px;
+  }
+  button{
+    padding: 12px 40px ;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  form{
+    margin-top: 20px;
+  }
 }
 
