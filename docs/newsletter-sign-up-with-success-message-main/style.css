@@ -221,12 +221,16 @@ max-width: 380px;
   font-weight: bolder;
 }   
 
-/* 
+
 @media (max-width: 600px){
     .mobile-sucess{
-       
+       padding-top: 150px;
+       border-radius: 0;
+    } 
+    .mobile-sucess button{
+      margin-top: 250px;
     }
-} */
+}
 
 
 
